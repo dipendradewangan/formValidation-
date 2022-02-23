@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete form validation</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style/animate.css">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            
+            <!-- for first name -->
+
+            <span class="inputHeading">First name</span>
+            <div id="fnameDiv">
+                <input  id="fname" onfocus="fname_val_close()" onblur="fname_val()" type="text" name="fname" id="fname">
+                <i  id="fnameCheck" class="fa fa-check"></i>
+            </div>
+
+            <!-- for last name -->
+
+            <span class="inputHeading">Last name</span>
+            <div id="lnameDiv">
+                <input id="lname" onfocus="lname_val_close(), fname_val()" onblur="lname_val(),uname_val()" type="text" name="lname" id="lname">
+                <i id="lnameCheck" class="fa fa-check"></i>
+            </div>
+
+            <!-- for mobile -->
+
+            <span class="inputHeading">Mobile</span>
+            <div id="mobDiv">
+                <input id="mob" onfocus="mob_val_close(),fname_val(), lname_val()" onblur="mob_val()" type="number" name="mobile" id="mobile">
+                <i id="mobCheck" class="fa fa-check"></i>
+            </div>
+
+            <!-- for re enter mobile -->
+
+            <span class="inputHeading">Re enter mobile</span>
+            <div>
+                <input onfocus="mob_val(),fname_val(), lname_val()" type="number" name="remobile" id="remobile">
+                <i class="fa fa-check"></i>
+            </div>
+
+            <!-- for email -->
+
+            <span class="inputHeading">Email</span>
+            <div>
+                <input onfocus="mob_val(),fname_val(), lname_val()" type="email" name="email" id="email">
+                <i class="fa fa-check"></i>
+            </div>
+            
+            <!-- for username -->
+
+            <span class="inputHeading">Username</span>
+            <div>
+                <input onfocus="mob_val(), fname_val(), lname_val()" type="text" name="username" id="username">
+                <i id="usernameCheck" class="fa fa-check"></i>
+            </div>
+            
+            <!-- for password -->
+
+            <span class="inputHeading">Password</span>
+            <div>
+                <input onfocus="mob_val(), fname_val(), lname_val()" type="password" name="password" id="password">
+                <i class="fa fa-check"></i>
+            </div>
+
+            <!-- for submit button -->
+
+            <input type="submit" value="submit" disabled="disabled">
+        </form>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
