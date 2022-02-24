@@ -40,9 +40,9 @@
             <!-- for re enter mobile -->
 
             <span class="inputHeading">Re enter mobile</span>
-            <div>
-                <input onfocus="mob_val(),fname_val(), lname_val()" onblur="submit_val()" type="number" name="remobile" id="remobile">
-                <i class="fa fa-check"></i>
+            <div id="reMobDiv">
+                <input onfocus="reMob_val_close(),mob_val(),fname_val(), lname_val()" onblur="reMob_val(),submit_val()" type="number" name="remobile" id="remobile">
+                <i id="reMobCheck" class="fa fa-check"></i>
             </div>
 
             <!-- for email -->

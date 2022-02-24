@@ -98,6 +98,40 @@ function mob_val_close(){
 // mobile validation code end
 
 
+// remobile validation code start
+
+function reMob_val(){
+    var mobValue = document.getElementById("mob").value;
+    var reMob = document.getElementById("remobile");
+    var reMobValue = reMob.value;
+    var reMobDiv = document.getElementById("reMobDiv");
+    var reMobCheck = document.getElementById("reMobCheck");
+    (reMobValue == "")?(reMob.setAttribute("type","text")):(reMob.setAttribute("type","number"));
+    (reMobValue == "")?(reMob.value = "this field is empty"):reMobValue;
+    (reMobValue == "")?(reMob.style.color = "red"):reMobValue;
+    var check = (reMobValue == "")?(reMob.value = "this field is empty"):reMobValue;
+    (check == mobValue)?(reMob.setAttribute("type","number")):(reMob.setAttribute("type","text"));
+    (check == mobValue)?(reMob.value = reMobValue):(reMob.value = "Not match with mobile number");
+    (reMobValue == "")?(reMob.value = "this field is empty"):reMobValue;
+    (check == mobValue)?(reMobDiv.style.border = "1px solid green"):(reMobDiv.style.border = "1px solid red");
+    (check == mobValue)?(reMob.style.color = "black"):(reMob.style.color = "red");
+    (check == mobValue)?(reMobCheck.style.display = "inline"):(reMobCheck.style.display = "none");
+}
+
+
+// remobile validation close 
+function reMob_val_close(){
+    var reMob = document.getElementById("remobile");
+    var reMobDiv = document.getElementById("reMobDiv");
+    var reMobCheck = document.getElementById("reMobCheck");
+    reMob.value = "";
+    reMobDiv.style.border = "1px solid black";
+    reMob.style.color = "black";
+    reMobCheck.style.display = "none";
+}
+
+// remobile validation code end
+
 // username validation code start
 // username value follows the first name and lastname value 
 function uname_val(){
