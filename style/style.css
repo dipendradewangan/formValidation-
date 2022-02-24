@@ -63,6 +63,68 @@ form div .fa-check{
     display: none;
 }
 
+form #passDiv{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    /* padding: -19px; */
+    padding-left: -1px;
+    border: none;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+
+form #passInternalDiv{
+    margin-left: -1px;
+    width: 100%;
+}
+
+form #passFinalHint{
+    font-size: 10px;
+    display: block;
+    margin-top: 3px;
+    text-align: center;
+    /* display: none; */
+    border-radius: 5px;
+    color: green;
+}
+
+
+#passFinalHint #smillyEmogy{
+    color: yellow;
+    background-color: rgb(78, 75, 75);
+    border-radius: 7px;
+}
+
+
+#passFinalHint #SadEmogy{
+    color: yellow;
+    background-color: rgb(78, 75, 75);
+    border-radius: 5px;
+}
+
+form #passHint{
+    display: flex;
+    flex-direction: column;
+    color: #ccc;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: calibri;
+    padding: 5px;
+    position: absolute;
+    top: 34px;
+    left: 1px;
+    width: 14rem;
+    display: none;
+
+}
+
+
+form #passHint p{
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+}
+
 input[type=submit]{
     margin-top: 30px;
     background-color: rgba(90, 158, 221, 0.808);
@@ -74,4 +136,6 @@ input[type=submit]{
     border: .5px solid #ccc;
     cursor: not-allowed;
     width: 100%;
+    height: 40px;
+    border-radius: 5px;
 }

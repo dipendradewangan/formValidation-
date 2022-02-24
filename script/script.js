@@ -145,6 +145,46 @@ function uname_val(){
 }
 // username validation code end
 
+// password validation code start 
+
+function passwordHintEnable(){
+
+    var passHint = document.getElementById("passHint");
+    var password = document.getElementById("password");
+    var passwordValue = password.value;
+    ((passwordValue.charAt(0) == passwordValue.match(/[A-Z]/g))&&(passwordValue.match(/[a-z]/g)) && (passwordValue.match(/[0-9]/g)) && (passwordValue.match(/[~|`|!|@|#|$|%|^|&|*|(|_|-|+|=]/g)) && passwordValue.length >= 6)?(passHint.style.display = "none"):(passHint.style.display = "inline");
+}
+
+function pass_val(){
+    var password = document.getElementById("password");
+    var passwordUpper = document.getElementById("passwordUpper");
+    var passwordLower = document.getElementById("passwordLower");
+    var passwordNumber = document.getElementById("passwordNumber");
+    var passwordAlphanumeric = document.getElementById("passwordAlphanumeric");
+    var passHint = document.getElementById("passHint");
+    var passwordValue = password.value;
+    var FinalPassHintTag = document.getElementById("FinalPassHintTag");
+    var smillyEmoji = document.getElementById("smillyEmogy");
+    ((passwordValue.charAt(0) == passwordValue.match(/[A-Z]/g)))?(passwordUpper.style.display= "none"):(passwordUpper.style.display= "inline");
+    (passwordValue.match(/[a-z]/g))?(passwordLower.style.display= "none"):(passwordLower.style.display= "inline");
+    (passwordValue.match(/[0-9]/g))?(passwordNumber.style.display= "none"):(passwordNumber.style.display= "inline");
+    (passwordValue.match(/[~|`|!|@|#|$|%|^|&|*|(|_|-|+|=]/g))?(passwordAlphanumeric.style.display= "none"):(passwordAlphanumeric.style.display= "inline");
+    ((passwordValue.charAt(0) == passwordValue.match(/[A-Z]/g))&&(passwordValue.match(/[a-z]/g)) && (passwordValue.match(/[0-9]/g)) && (passwordValue.match(/[~|`|!|@|#|$|%|^|&|*|(|_|-|+|=]/g)))?(passHint.style.display = "none"):(passHint.style.display = "inline");
+    ((passwordValue.charAt(0) == passwordValue.match(/[A-Z]/g))&&(passwordValue.match(/[a-z]/g)) && (passwordValue.match(/[0-9]/g)) && (passwordValue.match(/[~|`|!|@|#|$|%|^|&|*|(|_|-|+|=]/g)) && (passwordValue.length >= 6))?(FinalPassHintTag.innerHTML = "Strong Password"):(FinalPassHintTag.innerHTML = "Week Password");
+    ((passwordValue.charAt(0) == passwordValue.match(/[A-Z]/g))&&(passwordValue.match(/[a-z]/g)) && (passwordValue.match(/[0-9]/g)) && (passwordValue.match(/[~|`|!|@|#|$|%|^|&|*|(|_|-|+|=]/g)) && (passwordValue.length >= 6))?(FinalPassHintTag.style.color = "green"):(FinalPassHintTag.style.color = "red");
+    ((passwordValue.charAt(0) == passwordValue.match(/[A-Z]/g))&&(passwordValue.match(/[a-z]/g)) && (passwordValue.match(/[0-9]/g)) && (passwordValue.match(/[~|`|!|@|#|$|%|^|&|*|(|_|-|+|=]/g)) && (passwordValue.length >= 6))?(smillyEmoji.style.display = "inline"):(smillyEmoji.style.display = "none");
+
+}
+
+
+function pass_val_close(){
+    var passHint = document.getElementById("passHint");
+    passHint.style.display = "none";
+}
+
+// password validation code end
+
+
 
 // submit button validation code start
 
