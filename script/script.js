@@ -110,3 +110,25 @@ function uname_val(){
     usernameCheck.style.display = "inline";
 }
 // username validation code end
+
+
+// submit button validation code start
+
+function submit_val(){
+    var fnameValue = document.getElementById("fname").value;
+    var lnameValue = document.getElementById("lname").value;
+    var mobValue = document.getElementById("mob").value;
+    var reMobValue = document.getElementById("remobile").value;
+    var emailValue = document.getElementById("email").value;
+    var usernameValue = document.getElementById("username").value;
+    var passwordValue = document.getElementById("password").value;
+    var submit = document.getElementById("submit");
+    ((fnameValue,lnameValue,mobValue,reMobValue,emailValue,usernameValue,passwordValue == "") || (fnameValue,lnameValue == "this field is empty") || (mobValue == "Enter 10 Digits mobile Number") || (mobValue == "Enter valid mobile number"))?(submit.disabled = true):(submit.disabled = false);
+    ((fnameValue,lnameValue,mobValue,reMobValue,emailValue,usernameValue,passwordValue == "") || (fnameValue,lnameValue == "this field is empty") || (mobValue == "Enter 10 Digits mobile Number") || (mobValue == "Enter valid mobile number"))?(submit.disabled = true):(submit.style.backgroundColor = "blue");
+    ((fnameValue,lnameValue,mobValue,reMobValue,emailValue,usernameValue,passwordValue == "") || (fnameValue,lnameValue == "this field is empty") || (mobValue == "Enter 10 Digits mobile Number") || (mobValue == "Enter valid mobile number"))?(submit.style.cursor = "not-allowed"):(submit.style.cursor = "pointer");
+    
+    
+    
+}
+
+// submit button validation code end

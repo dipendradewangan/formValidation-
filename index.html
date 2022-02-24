@@ -25,7 +25,7 @@
 
             <span class="inputHeading">Last name</span>
             <div id="lnameDiv">
-                <input id="lname" onfocus="lname_val_close(), fname_val()" onblur="lname_val(),uname_val()" type="text" name="lname" id="lname">
+                <input id="lname" onfocus="lname_val_close(), fname_val()" onblur="lname_val(),uname_val(),submit_val()" type="text" name="lname" id="lname">
                 <i id="lnameCheck" class="fa fa-check"></i>
             </div>
 
@@ -33,7 +33,7 @@
 
             <span class="inputHeading">Mobile</span>
             <div id="mobDiv">
-                <input id="mob" onfocus="mob_val_close(),fname_val(), lname_val()" onblur="mob_val()" type="number" name="mobile" id="mobile">
+                <input id="mob" onfocus="mob_val_close(),fname_val(), lname_val()" onblur="mob_val(),submit_val()" type="number" name="mobile" id="mobile">
                 <i id="mobCheck" class="fa fa-check"></i>
             </div>
 
@@ -41,7 +41,7 @@
 
             <span class="inputHeading">Re enter mobile</span>
             <div>
-                <input onfocus="mob_val(),fname_val(), lname_val()" type="number" name="remobile" id="remobile">
+                <input onfocus="mob_val(),fname_val(), lname_val()" onblur="submit_val()" type="number" name="remobile" id="remobile">
                 <i class="fa fa-check"></i>
             </div>
 
@@ -49,7 +49,7 @@
 
             <span class="inputHeading">Email</span>
             <div>
-                <input onfocus="mob_val(),fname_val(), lname_val()" type="email" name="email" id="email">
+                <input onfocus="mob_val(),fname_val(), lname_val()" onblur="submit_val()" type="email" name="email" id="email">
                 <i class="fa fa-check"></i>
             </div>
             
@@ -57,7 +57,7 @@
 
             <span class="inputHeading">Username</span>
             <div>
-                <input onfocus="mob_val(), fname_val(), lname_val()" type="text" name="username" id="username">
+                <input onfocus="mob_val(), fname_val(), lname_val()" onblur="submit_val()"  type="text" name="username" id="username">
                 <i id="usernameCheck" class="fa fa-check"></i>
             </div>
             
@@ -65,13 +65,13 @@
 
             <span class="inputHeading">Password</span>
             <div>
-                <input onfocus="mob_val(), fname_val(), lname_val()" type="password" name="password" id="password">
+                <input onfocus="mob_val(), fname_val(), lname_val()" onblur="submit_val()" type="password" name="password" id="password">
                 <i class="fa fa-check"></i>
             </div>
 
             <!-- for submit button -->
 
-            <input type="submit" value="submit" disabled="disabled">
+            <input id="submit" type="submit" value="submit" disabled="disabled">
         </form>
     </div>
     <script src="script/script.js"></script>
