@@ -1,27 +1,26 @@
 @charset "utf-8";
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container{
+.container {
     width: 25rem;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
     height: 35rem;
     margin: 3rem;
     border-radius: 0.5rem;
-    
 }
 
-.container form{
+.container form {
     width: 100%;
     height: 100%;
     display: flex;
@@ -30,17 +29,16 @@ body{
     padding: 20px;
     /* font-weight: bold; */
     /* font-size: 15px; */
-
 }
 
-.inputHeading{
-    padding: 10px 0 3px 0 ;
+.inputHeading {
+    padding: 10px 0 3px 0;
     font-size: 15px;
     font-weight: bold;
     font-family: calibri;
 }
 
-form div{
+form div {
     width: 100%;
     border: 0.5px solid gray;
     border-radius: 5px;
@@ -49,21 +47,21 @@ form div{
     justify-content: space-between;
 }
 
-form input{
+form input {
     width: 90%;
     padding: 5px;
     border: none;
     outline: none;
     border-radius: 3px;
 }
-form div .fa-check{
 
+form div .fa-check {
     color: green;
     padding: 3px;
     display: none;
 }
 
-form #passDiv{
+form #passDiv {
     display: flex;
     flex-direction: column;
     border: 1px solid red;
@@ -74,14 +72,12 @@ form #passDiv{
     position: relative;
 }
 
-
-
-form #passInternalDiv{
+form #passInternalDiv {
     margin-left: -1px;
     width: 100%;
 }
 
-form #passFinalHint{
+form #passFinalHint {
     font-size: 10px;
     display: block;
     margin-top: 3px;
@@ -91,21 +87,19 @@ form #passFinalHint{
     color: green;
 }
 
-
-#passFinalHint #smillyEmogy{
+#passFinalHint #smillyEmogy {
     color: yellow;
     background-color: rgb(78, 75, 75);
     border-radius: 7px;
 }
 
-
-#passFinalHint #SadEmogy{
+#passFinalHint #SadEmogy {
     color: yellow;
     background-color: rgb(78, 75, 75);
     border-radius: 5px;
 }
 
-form #passHint{
+form #passHint {
     display: flex;
     flex-direction: column;
     color: #ccc;
@@ -117,15 +111,13 @@ form #passHint{
     left: 1px;
     width: 14rem;
     display: none;
-
 }
 
-
-form #passHint p{
+form #passHint p {
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
 }
 
-input[type=submit]{
+input[type="submit"] {
     margin-top: 30px;
     background-color: rgba(90, 158, 221, 0.808);
     font-size: 15px;
@@ -133,7 +125,7 @@ input[type=submit]{
     /* background-color: gray; */
     background-color: #ccc;
     font-weight: bold;
-    border: .5px solid #ccc;
+    border: 0.5px solid #ccc;
     cursor: not-allowed;
     width: 100%;
     height: 40px;
